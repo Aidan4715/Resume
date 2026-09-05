@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Aidan Joshi
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aidan Joshi} \\ \vspace{1pt}
+    \small \underline{760-470-0819} $|$ \href{}{\underline{aidanjoshi06@gmail.com}} $|$ 
+    \href{https://github.com/Aidan4715}{\underline{github.com/Aidan4715}}
+    
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University Fullerton}{Fullerton, CA}
+      {Bachelor of Science in Computer Science}{August 2024 -- May 2028}
+        \resumeItemListStart
+            \resumeItem{\textbf{Relevant Coursework:} Machine Learning, Data Structures and Algorithms, File Structures and Databases, Backend Development, Software Engineering Basics, Object Orientated Programming, Compilers}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, SQL, Java, JavaScript, Assembly, HTML/CSS} \\
+
+     \textbf{Developer Tools}{: Linux, Godot, Yasm, GDB, WSL, Git/Github, Ubuntu, VS Code, Figma, LaTeX} 
+     }}\\
+
+ \end{itemize}
+%-------------------------------------------
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+ \resumeSubheading
+      {Ross Store Associate}{November 2025 -- Present}
+      {Ross Dress For Less} {Fullerton, CA}
+      \resumeItemListStart
+        \resumeItem{Deliver high-quality customer service in a fast-paced environment assisting \textbf{50+} customers with all inquiries}
+        \resumeItem{Operate POS system handling \textbf{\$3,000+} in cash and card transactions, in a high degree of accuracy and efficiency}
+        \resumeItem{Effectively collaborate with team members to complete specific responsibilities including high-volume restocking, responsive customer service, and maintaining operational efficiency during peak business hours}
+        \resumeItem{Resolve customer issues by analyzing concerns and identifying appropriate solutions, still adhering to ROSS policy}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+    \section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Dinosaur Database} $|$ \emph{C++}}{May 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a fully functional database of dinosaur records using a custom implementation of a Binary Search Tree}
+            \resumeItem{Implemented key BST operations including insertion, deletion, traversal, and search for dynamic data management}
+            \resumeItem{Designed a Dinosaur class with operator overloading enabling object comparisons and efficient sorting inside a BST}
+            \resumeItem{Integrated text-based user interface for interactive database manipulation and AVL Tree visualization in Graphviz}
+          \resumeItemListEnd
+    
+      \resumeProjectHeading
+          {\textbf{Zombie OverFlow} $|$ \emph{Python and SQL}}{April 2026}
+          \resumeItemListStart
+            \resumeItem{Built an educational math game in \textbf{Python} across \textbf{7} modules, applying OOP and modular design to separate gameplay, authentication, economy, and data access layers}
+      \resumeItem{Designed a relational \textbf{SQLite} schema of \textbf{3} tables (users, items, inventory) with foreign keys and unique constraints, using multi-table \textbf{JOIN} queries to retrieve per-user inventories}
+      \resumeItem{Implemented full account management including registration, login, security-question password recovery, and profile updates, using parameterized SQL queries to prevent SQL injection}
+      \resumeItem{Engineered a persistent currency system with difficulty-based reward multipliers, per-level scaling, balance caps, and duplicate-reward prevention, saving coin balances across sessions}
+      \resumeItem{Wrote \textbf{13} unit tests with Python's unittest framework covering earning, spending, boundary, and invalid-input cases to validate reward and transaction logic}
+          \resumeItemListEnd
+        
+          
+    \resumeSubHeadingListEnd
+%------------------------------
+
+
+
+%-----------extracurricular-----------
+\section{Extracurriculars}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+{Association for Computing Machinery }{January 2025 -- Present}{ACM Marketing Board Member \& Club Member}{Fullerton, CA}
+      \resumeItemListStart
+        \resumeItem{Manage ACM’s media accounts to promote events and club initiatives to \textbf{1000+} followers}
+    \resumeItem{Strengthening ACM’s digital outreach for technical events, increasing student engagement and participation}
+    \resumeItem{Collaborate with \textbf{55+} board members to design and advertise events using Figma and other creative tools}
+    \resumeItem{Participate and assist in weekly technical workshops to enhance programming and design skills}
+        \resumeItemListEnd
+
+            \resumeSubheading
+{Sigma Pi Fraternity}{September 2024 -- February 2026}{Promotion Committee \& Scholar}{Fullerton, CA}
+      \resumeItemListStart
+        \resumeItem{Manage Sigma Pi Fullerton’s social media presence to promote fraternity events and initiatives to \textbf{3000+} followers}
+    \resumeItem{Provide photography for fraternity composites, marketing materials, and promotional campaigns}
+    \resumeItem{Monitored and evaluated academic performance for a \textbf{140+} member fraternity, with \textbf{50+} new members, ensuring adherence to strict grade and GPA standards to maintain consistent academic standards across all members.}
+    \resumeItem{Proactively identified and assist members at risk of academic probation through strictly structured grade check-ins}
+    \resumeItem{Organized weekly structured study rooms with peer tutoring to promote accountability and improve in academics}
+    
+        \resumeItemListEnd
+
+      \resumeSubHeadingListEnd
+
+\end{document}
